@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- started: 08/02/23 -->
+    <!-- updated: 11/02/23 -->
+    <!-- crE8Ed by RFX -->
+    <title>crE8_v1.1</title>
+    <base target="_blank">
+
+    <!-- icons -->
+    <link rel="icon" type="icon"
+        href="https://cybersecurityinstitute.co.za/wp-content/uploads/bb-plugin/cache/grad_white-circle.png">
+    <!-- <link rel="icon" type="icon"
+        href="https://img.freepik.com/premium-vector/graduation-cap-diploma_602006-3838.jpg?w=2000"> -->
+    <!-- <link rel="icon" type="icon"
+        href="https://www.eduopinions.com/wp-content/uploads/2018/09/CapePeninsulaUniversityofTechnology-logo.jpg"> -->
+
+
+    <!-- styles  -->
+    <!-- <link rel="stylesheet" href="./myStyle.css"> -->
+    <!-- <link rel="stylesheet" href="animate.css"> -->
+
+
+    <!-- scripts -->
+    <!-- <script src="app.js"></script> -->
+
+
+    <!-- KSTYLES -->
+    <!-- main styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .js-line {
+            font-family: sans-serif;
+            margin: 10px 0 20px 0;
+        }
+
+
+
+        /* HEADER */
+        header {
+            height: 40vh;
+            padding: 10px;
+            /* background: linear-gradient(red 50%, black 50%); */
+            /* background-color: orangered; */
+            /* color: black; */
+            /* box-shadow: inset 0 5px 10px 3px black; */
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-weight: 100;
+            text-align: center;
+            padding: 60px 0px 40px 0px;
+            /* font-family: monospace; */
+        }
+
+
+        header a {
+            color: yellow;
+            transition: 300ms ease;
+        }
+
+        header a:hover {
+            color: blue;
+        }
+
+
+        header pre {
+            padding: 10px;
+            font-size: 8px;
+            text-align: left;
+        }
+
+        header #js {
+            color: black;
+            background-color: white;
+            width: fit-content;
+
+            text-align: left;
+            padding: 0px 10px;
+            line-height: 1.2rem;
+        }
+
+
+        /* BUTTONS (color) */
+        .buttons {
+            margin: 40px 0 20px 0;
+        }
+
+        header button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #dark {
+            background-color: black;
+        }
+
+        #light {
+            background-color: white;
+        }
+
+
+
+        /* MAIN */
+        main {
+            padding: 20px 10px;
+        }
+
+        main div {
+            margin-bottom: 20px;
+        }
+
+
+        main ul {
+            list-style: none;
+            font-family: monospace;
+            line-height: 1.2rem;
+        }
+
+        main ul a {
+            color: white;
+        }
+
+
+
+
+        /* FOOTER */
+        section {
+            height: 5vh;
+        }
+
+        footer {
+            height: 110vh;
+            background-color: black;
+            position: relative;
+        }
+
+        /* footer .container { */
+        /* position: absolute; */
+        /* top: calc(50vh - 60px); */
+        /* left: calc(50vw); */
+
+        /* top: 50vh; */
+        /* left: 50vh; */
+        /* } */
+
+        footer .shape {
+            position: absolute;
+            left: calc(50vw - 30px);
+            top: 50vh;
+
+            border: 1px solid white;
+            /* background-color: black; */
+            background: transparent;
+
+            width: 60px;
+            height: 60px;
+
+            animation: animate1 20s ease infinite;
+        }
+
+        footer .shape3 {
+            position: absolute;
+            left: calc(50vw - 20px);
+            top: 50vh;
+
+            border: 1px solid white;
+            /* background-color: black; */
+            background: transparent;
+
+            width: 40px;
+            height: 40px;
+
+            animation: animate 20s ease infinite;
+        }
+
+        footer .shape1 {
+            position: absolute;
+            left: calc(50vw - 80px);
+            top: 50vh;
+
+            border: 1px solid white;
+            /* background-color: black; */
+            background: transparent;
+
+            width: 160px;
+            height: 160px;
+
+            animation: animate1 10s ease infinite;
+        }
+
+        footer .shape2 {
+            position: absolute;
+            left: calc(50vw - 50px);
+            top: 50vh;
+
+            border: 1px solid white;
+            /* background-color: black; */
+            background: transparent;
+
+            width: 100px;
+            height: 100px;
+
+            animation: animate 10s ease infinite;
+        }
+    </style>
+
+    <!-- search bar -->
+    <style>
+        .search input {
+            font-family: monospace;
+        }
+
+
+        .search-engine select,
+        .search-engine p {
+            /* margin: 5px; */
+            display: inline-block;
+        }
+
+        .search-engine select {
+            outline: none;
+            border: 1px solid black;
+            background-color: white;
+            padding: 2px;
+            margin: 0 5px;
+        }
+
+
+
+        /* button */
+        .search button {
+            background: white;
+            color: black;
+            cursor: pointer;
+
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid black;
+            outline: none;
+            transition: 500ms ease;
+        }
+
+        .search button:hover {
+            background-color: orange;
+        }
+
+        .search button:focus {
+            background-color: yellow;
+            color: yellow;
+            border: none;
+        }
+
+
+        /* record-div */
+        #recorded-searches {
+            margin-top: 20px;
+        }
+
+
+        /* main .search {
+                    padding: 10px;
+                } */
+
+        main .search h2,
+        .search h3 {
+            /* margin: 10px 0; */
+            font-size: 18px;
+            font-weight: 100;
+            font-family: monospace;
+        }
+
+        main .search h3 {
+            font-size: 15px;
+
+        }
+
+        main .search p {
+            font-family: monospace;
+        }
+
+        main .search input {
+            border: none;
+            outline: none;
+            color: green;
+
+            padding: 5px;
+            width: 300px;
+            background: transparent;
+
+            font-size: 16px;
+            font-weight: 100;
+        }
+    </style>
+
+    <!-- animation_styles -->
+    <style>
+        @keyframes animate {
+            0% {
+                border-radius: 50%;
+            }
+
+            10% {
+                /* transform: skewX(30deg); */
+                /* transform: skewY(30deg); */
+
+                /* transform: scaleX(2); */
+                /* transform: scaleY(2); */
+                /* transform: scaleZ(2); */
+
+                /* transform: translateX(100px) translateY(100px); */
+
+
+                /* transform: rotate(45deg); */
+                /* transform: rotateY(135deg); */
+                transform: rotateX(135deg);
+                border-radius: 50%;
+            }
+
+            20% {
+                transform: rotateX(0deg);
+                border-radius: 50%;
+                /* transform: translateX(-200px) translateY(-200px); */
+            }
+
+            30% {
+                transform: rotateY(135deg);
+                border-radius: 50%;
+            }
+
+            40% {
+                transform: rotateY(0deg);
+                border-radius: 50%;
+                border-color: yellow;
+            }
+
+            80% {
+                border-radius: 0;
+                border-color: yellow;
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+
+
+        @keyframes animate1 {
+            0% {
+                border-radius: 50%;
+            }
+
+            10% {
+                /* transform: skewX(30deg); */
+                /* transform: skewY(30deg); */
+
+                /* transform: scaleX(2); */
+                /* transform: scaleY(2); */
+                /* transform: scaleZ(2); */
+
+                /* transform: translateX(100px) translateY(100px); */
+
+
+                /* transform: rotate(45deg); */
+                /* transform: rotateY(135deg); */
+                transform: rotateX(270deg);
+                border-radius: 50%;
+            }
+
+            20% {
+                transform: rotateX(0deg);
+                border-radius: 50%;
+                /* transform: translateX(-200px) translateY(-200px); */
+            }
+
+            30% {
+                transform: rotateY(270deg);
+                border-radius: 50%;
+            }
+
+            40% {
+                transform: rotateY(0deg);
+                border-radius: 50%;
+                border-color: yellow;
+            }
+
+            80% {
+                border-radius: 0%;
+                border-color: yellow;
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="https://patorjk.com/" title="explore_more_web_apps">
+            <pre>
+ ____ ___              _____     .__    .__  .__        __            
+|    |   \______ _____/ ____\_ __|  |   |  | |__| ____ |  | __  ______
+|    |   /  ___// __ \   __\  |  \  |   |  | |  |/    \|  |/ / /  ___/
+|    |  /\___ \\  ___/|  | |  |  /  |__ |  |_|  |   |  \    <  \___ \ 
+|______//____  >\___  >__| |____/|____/ |____/__|___|  /__|_ \/____  >
+             \/     \/                               \/     \/     \/ 
+            </pre>
+        </a>
+
+        <!-- <h1>Useful resources</h1> -->
+        <p id="js"></p>
+
+
+        <!-- color buttons -->
+        <script>
+            // changing the bg
+            // https://softauthor.com/change-background-color-javascript/
+
+            // let btn1 = document.getElementById("dark");
+            // let btn2 = document.getElementById("white");
+
+            function dark() {
+                // background
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+
+                // links
+                let links = document.getElementsByTagName("a");
+                document.getElementsByTagName("a")[0].style.color = "yellow";
+
+                for (a = 1; 0 < links.length; a++) {
+                    document.getElementsByTagName("a")[a].style.color = "white";
+                }
+
+                // input text
+                document.getElementsByTagName("input")[0].style.color = "white";
+            }
+
+
+            function light() {
+                // background
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+
+                // links
+                let links = document.getElementsByTagName("a");
+
+                for (a = 0; 0 < links.length; a++) {
+                    document.getElementsByTagName("a")[a].style.color = "black";
+                }
+
+                // input color
+                document.getElementById("searching").style.color = "black";
+            }
+        </script>
+
+        <div class="buttons">
+            <button id="dark" onclick="dark()"></button>
+            <button id="light" onclick="light()"></button>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://www.cput.ac.za/" title="cput_obsolete_and_obnoxious_looking_website">
+                        CPUT
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/homepage">
+                        CPUT_homepage
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/about/contact">
+                        CPUT_contact_information
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/about/history">
+                        CPUT_short_history
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bi.cput.ac.za/PowerHEDA/Dashboard.aspx">
+                        CPUT_statistics
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/academic/faculties">
+                        CPUT_faculties
+                    </a>
+                </li>
+                <p class="js-line"></p>
+
+
+                <!-- media -->
+                <li>
+                    <a href="https://www.cput.ac.za/newsroom/news" title="CPUT_news">
+                        CPUT_news
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/live">
+                        CPUT_livestreams
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/cputnews">
+                        CPUT_YouTube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/CPUT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                        CPUT_Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/wearecput/?hl=en">
+                        CPUT_Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.flickr.com/photos/66526192@N06/sets/">
+                        CPUT_Flickr
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/cput.ac.za/">
+                        CPUT_Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/CPUTSTUDENTS/">
+                        CPUT_students_Facebook
+                    </a>
+                </li>
+                <p class="js-line"></p>
+
+
+                <!-- more -->
+                <li>
+                    <a href="https://www.cput.ac.za/students/about/orientation" title="CPUT_orientation">
+                        CPUT_orientation
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/life/final-year-experience-programme/fyep-activities">
+                        CPUT_planned_year_activities
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/life/activities">
+                        CPUT_activities
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/storage/students/passport_to_student_life.pdf">
+                        CPUT_passport_to_student_life.pdf
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/life/sport">
+                        CPUT_sports
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/lib">
+                        CPUT_library
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/help/tags/272/sos.html">
+                        CPUT_help
+                    </a>
+                </li>
+                <p class="js-line"></p>
+
+
+                <!-- student stuff -->
+                <li>
+                    <a href="https://www.cput.ac.za/about/dates" title="CPUT_2023_calendar">
+                        CPUT_2023_academic_calendar
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/about/registration">
+                        CPUT_first_year_students
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/about/results">
+                        CPUT_view_examination_results
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.studocu.com/en-au/institution/cape-peninsula-university-of-technology/8832">
+                        CPUT_Studocu
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://enter.cput.ac.za/cas/login?service=https%3a%2f%2fbi.cput.ac.za%2fPowerHEDA%2fDashboard.aspx%3fauthenticationCheck%3d1">
+                        CPUT_login_unknown
+                    </a>
+                </li>
+                <li>
+                    <a href="https://opa.cput.ac.za/">
+                        CPUT_OPA_(Online_Personal_Access)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://alecto.cput.ac.za/pls/prodi41/w99pkg.mi_login">
+                        CPUT_SOS_(Student_Online_Services)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://myclassroom.cput.ac.za">
+                        CPUT_Blackboard_|_myclassroom
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.office.com/">
+                        MS_office
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/life/development">
+                        CPUT_student_development
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cput.ac.za/students/life/emergency">
+                        Emergency_contact_numbers
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="js-line"></p>
+
+
+        <!-- my stuff; password here -->
+        <div>
+            <ul>
+                <li>
+                    <!-- https://beta.elevenlabs.io/sign-up -->
+                    <a href="http://www.elevenlabs.io/" title="ai_voice">
+                        elevenlabs
+                    </a>
+                </li>
+                <li>
+                    <a href="https://openai.com/">
+                        openai
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fotor.com/features/ai-image-generator/">
+                        Fotor
+                    </a>
+                </li>
+                <li>
+                    <a href="https://midjourney.com/home/?callbackUrl=%2Fapp%2F">
+                        midjourney
+                    </a>
+                </li>
+                <li>
+                    <a href="https://deepai.org/">
+                        Deepai
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.myciti.org.za/en/home/">
+                        myciti_home
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.myciti.org.za/en/routes-stops/plan-your-journey/">
+                        myciti_plan_your_journey
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="js-line"></p>
+
+
+        <div class="search">
+            <!-- <h2>Search CPUT</h2> -->
+
+            <!-- search engines -->
+            <div class="search-engine">
+                <p>Select a search engine</p>
+
+                <select name="" id="engines">
+                    <option value="google">google</option>
+                    <option value="duck">duckduckgo</option>
+                    <option value="bing">bing</option>
+                    <option value="yahoo">yahoo</option>
+
+                    <option value="brave">brave</option>
+                    <option value="internet_archieve">internet_archieve</option>
+                    <option value="neeva">neeva</option>
+                    <option value="ecosia">ecosia</option>
+                </select>
+            </div>
+
+            <!-- symbol from https://www.teachucomp.com/special-characters-in-html-tutorial/ -->
+            <!-- <h3>&#60;search&#62;</h3> -->
+            <p> >>> <input type="text" id="searching" placeholder="search_query"></p>
+            <!-- <p> >>> <input type="text" id="mod_search" placeholder=""></p> -->
+
+            <button onclick="printChoice()">search</button>
+
+            <div id="recorded-searches"></div>
+        </div>
+    </main>
+
+    <section></section>
+
+
+    <!-- FOOTER -->
+    <!-- 
+        maybe add an option to speed up or slow down the animation
+        select, options
+    -->
+    <footer>
+        <!-- <select name="speed" id="">
+            <option value="normal">normal_speed</option>
+            <option value="faster">faster</option>
+            <option value="slower">slower</option>
+            <option value="random">random-speed</option>
+        </select> -->
+
+        <div class="container">
+            <div class="shape3"></div>
+            <div class="shape"></div>
+            <div class="shape2"></div>
+            <div class="shape1"></div>
+        </div>
+    </footer>
+</body>
+
+<!-- KSCRIPT -->
+<!-- main_JS -->
+<script>
+    // date
+    let d = new Date();
+    let place = document.getElementById("js");
+
+    place.innerHTML = d.toDateString();
+    // d.toDateString();
+    console.log(d);
+
+
+    // random number
+    let a = Math.random() * 100;
+    console.log(a);
+
+
+    // js-line
+    let line = "========================================";
+    // line = maybe 40 chars
+
+    let js_lines = document.getElementsByClassName("js-line");
+
+    for (a = 0; a < 5; a++) {
+        js_lines[a].innerHTML = line;
+    }
+
+</script>
+
+<!-- recording browser used -->
+<script>
+    function printChoice() {
+        let engines = document.getElementById("engines").value;
+        let ap = document.getElementsByTagName("option");
+
+        for (a = 0; a < ap.length; a++) {
+            let v = document.getElementsByTagName("option")[a].value;
+            // console.log(v);
+
+            if (v == engines) {
+                //     console.log(v);
+                //     console.log(typeof v);
+                //     console.log(true);
+
+                let search_query = document.getElementById("searching");
+
+                // cput search
+                // window.alert("success");
+                // window.open("https://www.google.com/search?q=inurl%3A%27cput%27+" + search_query.value);
+                // window.open("inurl:'cput' " + search_query.value);
+
+                switch (v) {
+                    case "google":
+                        url = "https://www.google.com/search?q=";
+                        window.open(url + search_query.value);
+                        break;
+
+                    case "duck":
+                        url = "https://duckduckgo.com/?q=";
+                        window.open(url + search_query.value);
+                        break;
+
+                    case "bing":
+                        url = "https://www.bing.com/search?q=";
+                        window.open(url + search_query.value);
+                        break;
+
+                    case "yahoo":
+                        url = "https://search.yahoo.com/search?p=";
+                        window.open(url + search_query.value);
+                        break;
+
+                    case "brave":
+                        url = "https://search.brave.com/search?q=";
+                        window.open(url + search_query.value);
+                        break;
+
+                    case "internet_archieve":
+                        url = "https://web.archive.org/web/20230000000000*/";
+                        window.open(url + search_query.value);
+                        break;
+
+                    case "neeva":
+                        url = "https://neeva.com/search?q=";
+                        window.open(url + search_query.value);
+                        break;
+
+
+                    case "ecosia":
+                        url = "https://www.ecosia.org/search?method=index&q=";
+                        window.open(url + search_query.value);
+                        break;
+
+
+                    // default:
+                    //     url = "https://www.google.com/search?q="
+                }
+
+
+                let rec = document.getElementById("recorded-searches");
+
+                let z = document.createElement("p");
+                z.style.color = "green";
+
+                let y = document.createTextNode(v + ", ");
+                z.appendChild(y);
+
+                let x = document.createTextNode(search_query.value);
+                z.appendChild(x);
+
+                rec.appendChild(z);
+                // rec.appendChild(search_query);
+            }
+
+        }
+        console.log(url);
+    }
+</script>
+
+</html>
