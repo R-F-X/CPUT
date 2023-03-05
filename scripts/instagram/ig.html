@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>for-ig</title>
+
+    <style></style>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const URL = "https://www.instagram.com/"
+
+    // profile image
+    let class1 = "x6umtig x1b1mbwd xaqea5y xav7gou xk390pu x5yr21d xpdipgo xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 \
+xkhd6sd x11njtxf xh8yej3"
+
+    let profileImg = document.getElementsByClassName(class1)[0].getAttribute("src");
+    // let profileImg = document.getElementsByClassName(class1)[0];
+
+    console.log(profileImg);
+
+    window.open(profileImg);
+
+
+    // first few posts on page
+    let firstPosts = document.getElementsByClassName("_aabd _aa8k _aanf");
+    let imageContainer1 = document.getElementsByClassName("_aabd _aa8k _aanf")[0];
+    console.log(imageContainer1);
+
+
+    // raw/pure images
+    let imgClass = "x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3";
+    // let image1 = document.getElementsByClassName(imgClass)[0].getAttribute("srcset");
+    let image1 = document.getElementsByClassName(imgClass)[0].getAttribute("src");
+    // let image1 = document.getElementsByClassName(imgClass)[0].getAttribute("src");
+    console.log(image1);
+
+    window.open(image1);
+
+
+    // post and comments (a link)
+    let postAndCommentsClass = "x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+    // let postAndComments = document.getElementsByClassName(postAndCommentsClass);
+    // console.log(postAndComments);
+
+    // let postAndComments1 = document.getElementsByClassName(postAndCommentsClass)[0];
+    // let postAndComments1 = document.getElementsByClassName(postAndCommentsClass)[5];
+    let postAndComments1 = document.getElementsByClassName(postAndCommentsClass)[10].getAttribute("href");
+
+    let igUrl = "https://www.instagram.com/"
+    // console.log(postAndComments1);
+    console.log(igUrl + postAndComments1);
+
+    window.open(igUrl + postAndComments1);
+</script>
+
+
+</html>

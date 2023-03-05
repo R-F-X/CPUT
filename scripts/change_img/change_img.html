@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Change_image</title>
+
+    <style>
+        body {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    /*
+    started:    05/03/23
+    updated:    05/03/23
+    desc:       changes elements of a webpage
+    */
+
+
+    let URL = "https://myclassroom.cput.ac.za/?new_loc=%2Fultra%2Fcourse";
+    // https://myclassroom.cput.ac.za/
+
+    // background
+    let bgColor = window.prompt("Select a color");
+    // console.log();
+
+    let body = document.getElementsByTagName("body")[0];
+    // body.style = "background-color:black";
+    body.style = `background-color:${bgColor}`;
+
+
+    // getting the image tag
+    // login-logo new-logo customized-logo
+    let imageContainer = document.getElementsByClassName("login-logo new-logo customized-logo")[0];
+    let image = imageContainer.getElementsByTagName("img")[0];
+    image.style = "object-fit:cover";
+
+
+    // replacing the image
+    // images
+    let newImage1 = "https://images.unsplash.com/photo-1530075288903-69b220251c3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80";
+    let newImage2 = "https://wallpaperaccess.com/full/2440752.jpg";
+    let newImage3 = "https://www.pcclean.io/wp-content/uploads/2020/4/VZfAzq.jpg";
+    let newImage4 = "https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGQlMjBwaG90b3N8ZW58MHx8MHx8&w=1000&q=80";
+    let newImage5 = "https://images.unsplash.com/photo-1577023311546-cdc07a8454d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0c3xlbnwwfHwwfHw%3D&w=1000&q=80";
+
+    let newImage6 = "https://wallpapers.com/images/featured/hd-anime-prr1y1k5gqxfcgpv.jpg";
+    let newImage7 = "https://images.unsplash.com/photo-1575317599048-c58ede0d3c71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&w=1000&q=80";
+    let newImage8 = "";
+
+    let images = [newImage1, newImage2, newImage3, newImage4, newImage5,
+        newImage6, newImage7, newImage3]
+
+    // selecting random image
+    let randImg = Math.floor(Math.random() * images.length);
+    // console.log(randImg);
+    image.src = images[randImg];
+
+
+    // image.src = newImage6;
+    // console.log(image);
+</script>
+
+
+<script>
+    let arr = [2, 3, 4, 43, 23];
+
+    const r = Math.floor(Math.random() * arr.length);
+    console.log(r);
+
+    console.log(Math.floor(Math.random()));
+</script>
+
+</html>
