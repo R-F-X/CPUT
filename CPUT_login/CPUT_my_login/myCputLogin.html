@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- started: 02/01/23 -->
+    <!-- updated: 02/01/23 -->
+    <title>Self Help iEnabler</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>  
+
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./main.css">
+
+
+    <!-- scripts -->
+    <script
+      language="JavaScript1.2"
+      src="./Self Help iEnabler_files/its_scripts.js.download"
+      type="text/javascript"
+    ></script>
+  </head>
+
+
+  <!-- BODY -->
+  <body class="">
+
+    <!-- HEADER -->
+    <header>
+      <img src="./images/CPUT_logo_transparent.png" alt="CPUT_logo">
+      <!-- <h1>CAPE PENINSULA UNIVERSITY OF TECHNOLOGY</h1> -->
+
+      <div class="fra_date w3-hide-small">
+        <script type="text/javascript">
+          prt_header_datestamp();
+        </script>
+        Monday, 2nd January 2023
+      </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="position-relative">
+      
+      <!-- LOGIN FORM -->
+      <div class="login-form position-absolute top-50 start-50 translate-middle">
+          <h2>Registered Users: Login Credentials</h2>
+  
+          <form
+            class="w3-container"
+            method="post"
+            name="frmLogin"
+            action="https://alecto.cput.ac.za/pls/prodi41/w99pkg.mi_validate_user"
+          >
+
+            <!-- user type selection -->
+            <div class="user-types">
+              <input
+              type="radio"
+              name="numtype"
+              checked=""
+              value="S"
+              onclick="set_it();document.frmLogin.unum.focus();"
+            /><label>Student</label>
+
+              <input
+                type="radio"
+                name="numtype"
+                value="P"
+                onclick="set_it();document.frmLogin.unum.focus();"
+              /><label>Personnel</label>
+
+              <input
+                type="radio"
+                name="numtype"
+                value="O"
+                onclick="set_it();document.frmLogin.unum.focus();"
+              /><label>Other</label>
+
+              <input
+                type="radio"
+                name="numtype"
+                value="A"
+                onclick="set_it();document.frmLogin.unum.focus();"
+              /><label>Alumni</label> 
+            </div>
+            
+            
+            <!-- student number -->
+            <div class="student-number">
+              <label>Student Number:</label>
+              <input
+                type="text"
+                name="unum"
+                size="10"
+                maxlength="9"
+                autofocus=""
+              />
+            </div>
+
+            <!-- student passcode -->
+            <div class="student-passcode">
+              <label>Pin:</label>
+              <input
+                type="password"
+                name="pin"
+                size="10"
+                maxlength="5"
+                onblur="return chkZero(this);"
+              />
+            </div>
+
+
+            <p>
+              (Pin should consist of 5 digits. Do not start with a 0.)
+              <!-- <input
+                type="hidden"
+                name="authorise_function"
+                value="Login"
+              /> -->
+            </p>
+
+
+            <!-- buttons -->
+            <button
+              type="submit"
+              alt="Click Here To Login"
+              onmouseover="javascript:window.status='Login'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='Login';">
+              Login
+            </button>
+
+            <button
+              type="button"
+              alt="Click Here IF You Have Forgotten Your PIN"
+              onmouseover="javascript:window.status='Forgot Pin'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='sendLogin'; document.frmLogin.submit();"
+            >
+            Forgot pin
+            </button>
+            
+            <button
+              type="button"
+              alt="Click Here TO Change Your PIN"
+              onmouseover="javascript:window.status='Change Pin'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='changePin'; document.frmLogin.submit();"
+            >Change pin</button>
+
+            <button
+              type="button"
+              alt="Click Here To Request a PIN"
+              onmouseover="javascript:window.status='Request A Pin'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='requestPin'; document.frmLogin.submit();"
+            >Request a pin</button>
+
+            <button
+              type="button"
+              alt="Click Here If You Have Forgotten Your Student Number"
+              onmouseover="javascript:window.status='Forgot Student Number'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='forgotStno'; document.frmLogin.submit();"
+            >Forgot student number</button>
+
+          </form>
+      </div>
+    </main>
+    
+
+    <!-- FOOTER -->
+    <footer>
+      <script
+        src="./Self Help iEnabler_files/login_bottom.js.download"
+        type="text/javascript">
+      </script>
+
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td
+              valign="middle"
+              align="center"
+              bgcolor="#636563"
+              height="27"
+              class="customfooter">
+
+              [&nbsp;
+              <a href="mailto:">Contact Us</a>
+              
+              &nbsp;|&nbsp;
+              <a href='JavaScript: PopUp("/itsdocs/about.html", 800, 600);'
+                >About Us</a>
+                
+              &nbsp;|&nbsp;
+              <a href='JavaScript: PopUp("/itsdocs/disclaimer.html", 800, 600);'
+              >Disclaimer</a>
+              
+              &nbsp;|&nbsp;
+              <a href='JavaScript: PopUp("/itsdocs/terms.html", 800, 600);'
+              >Terms &amp; Conditions</a>
+              
+              &nbsp;|&nbsp;
+              <a href='JavaScript: PopUp("/itsdocs/privacy.html", 800, 600);'
+              >Privacy &amp; Security Statement</a>
+              
+              &nbsp;|&nbsp;
+              <a href='JavaScript: PopUp("/itsimages/poweredby.gif", 100, 100);'
+              >Powered By</a>
+              
+              &nbsp;]
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </footer>
+
+  </body>
+</html>

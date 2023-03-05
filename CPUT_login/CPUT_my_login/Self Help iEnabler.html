@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Self Help iEnabler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./Self Help iEnabler_files/w3.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Self Help iEnabler_files/its.css"
+    />
+    <script
+      language="JavaScript1.2"
+      src="./Self Help iEnabler_files/its_scripts.js.download"
+      type="text/javascript"
+    ></script>
+  </head>
+
+
+  <!-- BODY -->
+  <body class="">
+    <div id="fra_header" class="fra_header w3-theme-l4">
+      <div class="fra_inst">CAPE PENINSULA UNIVERSITY OF TECHNOLOGY</div>
+      <div class="fra_date w3-hide-small">
+        <script type="text/javascript">
+          prt_header_datestamp();
+        </script>
+        Monday, 2nd January 2023
+      </div>
+    </div>
+
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half itslogimg">
+        <img
+          src="./Self Help iEnabler_files/InsImg.gif"
+          alt="CAPE PENINSULA UNIVERSITY OF TECHNOLOGY"
+        />
+      </div>
+      <div id="adaptit" class="w3-half" style="text-align: right">
+        <img
+          src="./Self Help iEnabler_files/ItsImg.gif"
+          alt="ITS Tertiary Software"
+        />
+      </div>
+    </div>
+
+    <div class="login_top" id="login_top">
+      <script
+        src="./Self Help iEnabler_files/login_top.js.download"
+        type="text/javascript"
+      ></script>
+      <p></p>
+    </div>
+
+    <div class="login w3-row">
+      <script
+        src="./Self Help iEnabler_files/login_left.js.download"
+        type="text/javascript"
+      ></script>
+
+      <div id="login_left" class="w3-half w3-container">
+        <div
+          class="w3-card-4"
+          style="text-align: center; max-width: 500px; padding-bottom: 14px"
+        ></div>
+      </div>
+      <script
+        src="./Self Help iEnabler_files/login_right.js.download"
+        type="text/javascript"
+      ></script>
+
+      <!-- <div id="login_right" class="w3-half">
+        <div class="w3-card-4 w3-margin-bottom" style="max-width: 500px">
+          <header class="w3-container w3-blue">
+            <h5>Registered Users: Login Credentials</h5>
+          </header>
+          <form
+            class="w3-container"
+            method="post"
+            name="frmLogin"
+            action="https://alecto.cput.ac.za/pls/prodi41/w99pkg.mi_validate_user"
+          >
+            <input
+              type="radio"
+              name="numtype"
+              checked=""
+              value="S"
+              onclick="set_it();document.frmLogin.unum.focus();"
+            /><label>Student</label>
+            <input
+              type="radio"
+              name="numtype"
+              value="P"
+              onclick="set_it();document.frmLogin.unum.focus();"
+            /><label>Personnel</label>
+            <input
+              type="radio"
+              name="numtype"
+              value="O"
+              onclick="set_it();document.frmLogin.unum.focus();"
+            /><label>Other</label>
+            <input
+              type="radio"
+              name="numtype"
+              value="A"
+              onclick="set_it();document.frmLogin.unum.focus();"
+            /><label>Alumni</label> <br /><br />
+            <label id="LogUsr">Student Number: </label
+            ><input
+              class="w3-input"
+              type="text"
+              name="unum"
+              size="10"
+              maxlength="9"
+              autofocus=""
+            />
+            <label>Pin:</label>
+            <input
+              class="w3-input"
+              type="password"
+              name="pin"
+              size="10"
+              maxlength="5"
+              onblur="return chkZero(this);"
+            />
+            <p>
+              (5 numeric digits.Do not start with a 0.)<input
+                type="hidden"
+                name="authorise_function"
+                value="Login"
+              />
+            </p>
+            <input
+              type="submit"
+              class="w3-button w3-padding-small w3-border"
+              value="Login"
+              alt="Click Here To Login"
+              onmouseover="javascript:window.status='Login'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='Login';"
+            />
+            <input
+              type="button"
+              class="w3-button w3-padding-small w3-border"
+              value="Forgot Pin"
+              alt="Click Here IF You Have Forgotten Your PIN"
+              onmouseover="javascript:window.status='Forgot Pin'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='sendLogin'; document.frmLogin.submit();"
+            />
+            <input
+              type="button"
+              class="w3-button w3-padding-small w3-border"
+              value="Change Pin"
+              alt="Click Here TO Change Your PIN"
+              onmouseover="javascript:window.status='Change Pin'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='changePin'; document.frmLogin.submit();"
+            />
+            <input
+              type="button"
+              class="w3-button w3-padding-small w3-border"
+              value="Request A Pin"
+              alt="Click Here To Request a PIN"
+              onmouseover="javascript:window.status='Request A Pin'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='requestPin'; document.frmLogin.submit();"
+            />
+            <input
+              type="button"
+              class="w3-button w3-padding-small w3-border"
+              value="Forgot Student Number"
+              alt="Click Here If You Have Forgotten Your Student Number"
+              onmouseover="javascript:window.status='Forgot Student Number'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='forgotStno'; document.frmLogin.submit();"
+            />
+          </form>
+        </div>
+      </div> -->
+    </div>
+
+    <div id="login_bottom" class="login_bottom w3-hide-small">
+      <script
+        src="./Self Help iEnabler_files/login_bottom.js.download"
+        type="text/javascript"
+      ></script>
+      <div class="col-sm-12">
+        <script
+          src="./Self Help iEnabler_files/footer.js.download"
+          type="text/javascript"
+        ></script>
+        <div
+          class="w3-border-top w3-border-bottom w3-padding-small w3-margin-top"
+        >
+          <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td
+                  valign="middle"
+                  align="center"
+                  bgcolor="#636563"
+                  height="27"
+                  class="customfooter"
+                >
+                  [&nbsp;<a href="mailto:">Contact Us</a>&nbsp;|&nbsp;<a
+                    href='JavaScript: PopUp("/itsdocs/about.html", 800, 600);'
+                    >About Us</a
+                  >&nbsp;|&nbsp;<a
+                    href='JavaScript: PopUp("/itsdocs/disclaimer.html", 800, 600);'
+                    >Disclaimer</a
+                  >&nbsp;|&nbsp;<a
+                    href='JavaScript: PopUp("/itsdocs/terms.html", 800, 600);'
+                    >Terms &amp; Conditions</a
+                  >&nbsp;|&nbsp;<a
+                    href='JavaScript: PopUp("/itsdocs/privacy.html", 800, 600);'
+                    >Privacy &amp; Security Statement</a
+                  >&nbsp;|&nbsp;<a
+                    href='JavaScript: PopUp("/itsimages/poweredby.gif", 100, 100);'
+                    >Powered By</a
+                  >&nbsp;]
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

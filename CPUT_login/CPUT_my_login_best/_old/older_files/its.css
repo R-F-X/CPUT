@@ -1,0 +1,291 @@
+/* *************************************************************************************
+Program : its.css
+Version : v05.0.0.0
+Changes : 09-Nov-2018 DG 225095 Student experience improvement
+        : 10-NOV-2017 DG 225957 iEnabler look and feel enhancements
+        : 11-Sep-2018 DG 231251/231429 iEnabler enhancements for Chrome/Firefox support
+X0_VERSION : v04.1.0.2
+   *************************************************************************************
+*/
+.w3-sidebar a {
+   font-family: "Roboto", sans-serif
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.w3-wide {
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex-container {
+  display:flex; 
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding-bottom:5px; 
+  flex-wrap: wrap;
+}
+
+.flex-menu {
+  display:flex; 
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative; 
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden; 
+  width: 80px;
+  font-size: 10px;
+  background-color: blue; 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 3px; 
+  padding: 2px 0; 
+  /* Position the tooltip */ 
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* HEADER */
+div.fra_header { 
+  clear: both; 
+  padding-top: 5px;
+  padding-bottom: 10px; 
+  width:100%;
+  height: 35px;
+	/* background-color: #EAEAEA; */
+  font-weight: bold;
+  /* border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px; */
+}
+
+div.fra_inst {
+  color: #525252;
+  text-align: right; 
+  float: left; 
+  padding-left: 5px;
+}
+
+div.fra_date {
+  color: #525252;
+  text-align: right; 
+  float: right; 
+  padding-right: 5px;
+}
+
+/* FOOTER */
+.customfooter {
+	background-color: #EAEAEA;
+	color: #9C9E9C;
+}
+
+iframe {
+  width:100%;
+  height:auto;
+  min-height: 780px;
+  border:0;
+}
+
+#login_left {
+  display: block;
+}
+
+#adaptit {
+  display: none;
+}
+
+.detlContainer {
+  background: white;
+  display: none;  
+  border-radius: 10px;
+  border: 2px solid #C0C0C0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Table header */
+.tbl_header {
+  font-weight: bold;
+  background: white;
+  border: 2px solid #C0C0C0;
+  text-align: left;
+}
+
+/* Mandatory field asterisk */
+.mandatory_fld {
+	color: #FF0000; 
+	font-weight: bold; 
+}
+
+/* Student dashboard */
+#mainContainer {
+  overflow:hidden;
+}
+
+#divBio {
+  text-align: center;
+}
+
+.bioContainer {
+  background: #E3EEF9;
+  border-radius: 15px;
+  border: 2px solid #C0C0C0;
+  padding: 0px;
+  width : 150px;
+  }
+
+.barContainer {
+  background: #E3EEF9; 
+  border-radius: 10px;
+  border: 2px solid #C0C0C0;
+}
+
+.barContainer h3 { 
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.detlContainer {
+  background: white;
+  display: none;  
+  border-radius: 10px;
+  border: 2px solid #C0C0C0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+tr.rlheader th {
+border-left: 1px solid silver;
+border-right: 1px solid silver;
+
+}
+
+tr.rldata td {
+border-left: 1px solid silver;
+border-right: 1px solid silver;
+
+}
+
+tr.rowover td {
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+ 
+}
+
+tr.rldata td ul,tr.rowover td ul {
+margin: 0px;
+}
+ 
+tr.smallHeadingOnLeft th, tr.smallHeadingOnLeft td {
+  background: #4C9ED9;
+  border-bottom: 1px solid silver;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 7pt;
+}
+
+tr.smallHeadingOnLeft h3 { 
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: 7pt;
+}
+
+tr.smallHeadingOnLeft a { 
+  text-decoration: none; 
+  color: black; 
+  font-size: 7pt;
+}
+
+tr.headingOnLeft th, tr.headingOnLeft td {
+  background: #4C9ED9;
+  border-bottom: 1px solid silver;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.headingOnLeftH3 { 
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+} 
+
+/* 231251 Student iEnabler student dashboard photo control */
+#bioImage {
+  overflow:hidden;
+}
+
+#bioImage img {
+  width: 200px;
+  height: 200px;
+}
+
+/* 231251 Logon page institution image control */
+div.itslogimg img { 
+  height:200px;  
+ }
+
+img.itsmnuimg {
+  width:100px;
+}
+
+/* 231592 Input form control */
+textarea {
+  width : 100%;
+}
+
+label {
+  font-weight: 600;
+}
+
+label.btnLabel {
+  font-weight : 500;
+}
+
+span.spanMand {
+  font-weight: 900;
+  color: red;
+}

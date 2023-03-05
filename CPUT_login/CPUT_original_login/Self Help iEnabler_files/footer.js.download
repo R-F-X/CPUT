@@ -1,0 +1,74 @@
+/* ************************************************************************
+  Program : footer.js
+  Changed : 05-Jan-2012 T179523 Sarahm Remove the default ITS communication
+            details(ATOV of 178578)
+          : 07-Nov-2016 F217988 Raymond Add default link for About Us.
+          : 09-Nov-2017 DG 225095 Style adjustments
+          : 10-NOV-2017 DG 225957 iEnabler look and feel enhancements
+  X0_VERSION : v04.1.0.0
+************************************************************************ */
+function PopUp(pagename, w, h) {
+  var winl = (screen.width - w) / 2;
+  var wint = (screen.height - h) / 2;
+  winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars=1,resizable'
+  win = window.open(pagename, "PopWindow01", winprops)
+  if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+}
+
+document.write('<div class="w3-border-top w3-border-bottom w3-padding-small w3-margin-top">');
+document.write('<table border="0" width="100%" cellspacing="0" cellpadding="0">');
+document.write('<tr>');
+document.write('<td valign="middle" align="center" bgcolor="#636563" height="27" class="customfooter">');
+document.write('[&nbsp;');
+// =============================================================================
+// Do Not change before this line
+// =============================================================================
+
+// New Mailto Entry ------------------------------------------------------------
+MT_dest = " "; //179523
+MT_desc = "Contact Us";
+document.write('<a href="mailto:'+MT_dest+'">'+MT_desc+'</a>');
+
+// About institution ------------------------------------------------------
+PU_h = 600;
+PU_w = 800;
+PU_dest = "/itsdocs/about.html";
+PU_desc = "About Us";
+document.write('&nbsp;|&nbsp;<a href=\'JavaScript: PopUp("'+PU_dest+'", '+PU_w+', '+PU_h+');\'>'+PU_desc+'</A>');
+
+// Institution disclaimer ------------------------------------------------------
+PU_h = 600;
+PU_w = 800;
+PU_dest = "/itsdocs/disclaimer.html";
+PU_desc = "Disclaimer";
+document.write('&nbsp;|&nbsp;<a href=\'JavaScript: PopUp("'+PU_dest+'", '+PU_w+', '+PU_h+');\'>'+PU_desc+'</A>');
+
+// Institution terms of use------------------------------------------------------
+PU_h = 600;
+PU_w = 800;
+PU_dest = "/itsdocs/terms.html";
+PU_desc = "Terms &amp; Conditions";
+document.write('&nbsp;|&nbsp;<a href=\'JavaScript: PopUp("'+PU_dest+'", '+PU_w+', '+PU_h+');\'>'+PU_desc+'</A>');
+
+// Institution privacy policy ------------------------------------------------------
+PU_h = 600;
+PU_w = 800;
+PU_dest = "/itsdocs/privacy.html";
+PU_desc = "Privacy &amp; Security Statement";
+document.write('&nbsp;|&nbsp;<a href=\'JavaScript: PopUp("'+PU_dest+'", '+PU_w+', '+PU_h+');\'>'+PU_desc+'</A>');
+
+// Institution privacy policy ------------------------------------------------------
+PU_h = 100;
+PU_w = 100;
+PU_dest = "/itsimages/poweredby.gif";
+PU_desc = "Powered By";
+document.write('&nbsp;|&nbsp;<a href=\'JavaScript: PopUp("'+PU_dest+'", '+PU_w+', '+PU_h+');\'>'+PU_desc+'</A>');
+
+// =============================================================================
+// Do not change beyond this line
+// =============================================================================
+document.write('&nbsp;]');
+document.write('</td>');
+document.write('</tr>');
+document.write('</table>');
+document.write('</div>');
