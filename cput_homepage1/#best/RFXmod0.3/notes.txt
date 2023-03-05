@@ -1,0 +1,16 @@
+
+note from the website source code:
+<!--
+This award winning website was made with LOVE by CPUT's Web Office in 2013. 
+Ashley Jones, Marick Hornsveld and Lovemore Nalube. 
+Sadly, Ashley passed away in 2016. Here is our dedication to him: 
+
+"Ashley Jones encountered an unhandled exception in his core operating system, 
+which prematurely triggered a critical 'STOP' condition October 2016. 
+Diagnostics indicated multiple cascading hardware failures as the root problem. 
+Though his hardware has been decommissioned, Ashley's application has been 
+migrated to the Cloud and has been repurposed to run in a virtual machine on an infinite loop, 
+System.exit"
+-->
+
+

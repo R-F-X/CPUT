@@ -1,0 +1,22 @@
+/* top navbar */
+#ja-mainnav {
+    font-size: 12px;
+}
+
+
+/* when navbar expands */
+/* media query for tablet */
+/* .ja-megamenu ul.level0 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 744px !important;
+} */
+
+
+/* from www....css */
+.ja-megamenu ul.level0 {
+    display: block;
+    /* margin: 0 auto; */
+    width: 100%;
+    /* width: 980px; */
+}

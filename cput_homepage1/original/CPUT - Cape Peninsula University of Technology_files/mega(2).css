@@ -1,0 +1,56 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* lv - 0
+-----------------------------------*/
+.ja-megamenu ul.level0 li.mega a.mega {
+  border-right: 1px solid #1b5280;
+  color: #eaf1f7;
+}
+
+.ja-megamenu a.over {
+  background: #195383;
+}
+
+.ja-megamenu ul.level0 li.active a {
+	background: url(../../images/mainnav-active-bg.gif) repeat-x left top #195383;
+}
+
+/* lv - 1 and below
+-----------------------------------*/
+.ja-megamenu ul.level1 li.mega {
+  border-top: 1px solid #2a6392;
+}
+
+.ja-megamenu ul.level1 li.first {
+  border-top: 0;
+}
+
+.ja-megamenu ul.level1 li.mega a.mega {
+	border: 0;
+}
+
+.ja-megamenu ul.level1 li.mega a.over,
+.ja-megamenu ul.level1 li.mega a:hover,
+.ja-megamenu ul.level1 li.mega a.active {
+}
+/* CHILD CONTENT
+-----------------------------------*/
+.ja-megamenu .childcontent-inner {
+	background: #195383;
+	color: #a7c3db;
+}
+
+/* Grouped --- */
+.ja-megamenu .group-title {
+  border-bottom: 1px solid #336b99;
+}

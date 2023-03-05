@@ -1,0 +1,233 @@
+#streaming-notify-bar-bar {
+    min-height: 57px;
+    width: 100%;
+    z-index: 9;
+}
+#streaming-notify-bar {
+    background-color: #F70000;
+}
+#streaming-notify-bar.live, #streaming-notify-bar.developing {
+    background-color: #A20808;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar {
+    padding: 10px 0;
+}
+#streaming-notify-bar-stories {
+    margin: 0 auto;
+    padding-right: 20px;
+    position: relative;
+    width: 85%;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar-stories {
+    width: 85%;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar-stories {
+    height: 50px;
+    overflow: visible;
+    padding-right: 0;
+}
+#streaming-notify-bar-bar p {
+    color: #FFFFFF;
+    padding: 13px 20px 12px 0;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar p {
+    display: inline-table;
+    height: 100%;
+    padding: 0;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple p {
+    margin-right: 10px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple p:last-child {
+    margin-right: 0;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-2 p {
+    width: 415px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-3 p {
+    width: 273px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar p .headline-wrapper {
+    height: 50px;
+    overflow: hidden;
+}
+#streaming-notify-bar p strong {
+    background-color: #222;
+    bottom: -4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 1px rgba(255, 255, 255, 0.2);
+    float: left;
+    font-family: 'Futura Today Bold',Helvetica,arial,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2px 6px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar p strong {
+    background-color: rgba(0, 0, 0, 0.15);
+    bottom: 0;
+    box-shadow: none;
+    display: table-cell;
+    font-size: 12px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 1.1em;
+    overflow: hidden;
+    padding: 11px 5px 5px;
+    text-overflow: ellipsis;
+    width: 70px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar p strong.breaking-story-label-developing {
+    font-size: 10px;
+    height: 31px;
+    padding: 14px 5px 5px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar p strong.breaking-story-label-video {
+    font-size: 13px;
+    height: 35px;
+    padding: 10px 5px 5px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar .headline-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple .headline-wrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#streaming-notify-bar .headline {
+    color: inherit;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0 0 0 15px;
+    text-decoration: none;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar .headline {
+    display: inline-block;
+    line-height: 13px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-3 .headline {
+    font-size: 11px;
+    line-height: 11px;
+}
+#streaming-notify-bar .button {
+    border-left: 0 none;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    margin-left: 10px;
+    padding: 2px 0 2px 30px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+}
+#streaming-notify-bar .button > span {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: border-color 0.3s ease 0s;
+}
+#streaming-notify-bar .button:hover > span {
+    border-color: #FFFFFF;
+}
+#streaming-notify-bar .button:before {
+    background: url("/modules/mod_rseventspro_streaming_bar/header-sprite.png") no-repeat scroll -52px -159px rgba(0, 0, 0, 0);
+    content: "";
+    height: 18px;
+    left: 8px;
+    position: absolute;
+    top: -1px;
+    width: 17px;
+}
+#streaming-notify-bar .close-btn {
+    background: url("/modules/mod_rseventspro_streaming_bar/header-sprite.png") no-repeat scroll -322px -119px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 21px;
+    margin-top: -9px;
+    opacity: 0.6;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: 105%;
+    top: 50%;
+    white-space: nowrap;
+    width: 20px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar .close-btn {
+    opacity: 1;
+    right: -30px;
+}
+#streaming-notify-bar .close-btn:hover {
+    opacity: 1;
+}
+
+#streaming-notify-bar p {
+    padding: 13px 40px 12px 0;
+}
+#streaming-notify-bar-stories {
+    width: 85%;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar-stories {
+    width: 85%;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-2 p {
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-3 p {
+    width: 353px;
+}
+#streaming-notify-bar p strong {
+    bottom: -2px;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+#streaming-notify-bar .headline {
+    font-size: 110%;
+    margin: 0 0 0 20px;
+}
+#streaming-notify-bar.count-2 .headline {
+    font-size: 16px;
+    line-height: 18px;
+}
+#streaming-notify-bar.count-3 .headline {
+    font-size: 13px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar .headline {
+    line-height: 18px;
+    margin: 0;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-2 .headline {
+    font-size: 14px;
+}
+#streaming-notify-bar-bar.local #streaming-notify-bar.multiple.count-3 .headline {
+    font-size: 12px;
+    line-height: 14px;
+}
+#streaming-notify-bar .button {
+    border-left: 1px solid #FFFFFF;
+    margin-left: 20px;
+    padding: 2px 0 2px 43px;
+    top: -1px;
+}
+#streaming-notify-bar .button:before {
+    left: 20px;
+}
+
+#streaming-notify-bar .streaming-meta {
+margin-left: 20px;
+border-left: 1px solid #fff;
+padding-left: 20px;
+}
+
+.stream-tobegin #streaming-notify-bar.live {
+background-color: #000 !important;
+}

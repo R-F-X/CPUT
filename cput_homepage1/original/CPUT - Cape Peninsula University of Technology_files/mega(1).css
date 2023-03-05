@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* lv - 0
+-----------------------------------*/
+.ja-megamenu ul.level0 li.mega {
+  margin-right: 1px;
+}
+
+.ja-megamenu ul.level0 li.mega a.mega {
+  border-right: 1px solid #1b212a;
+  color: #afafaf;
+  font-weight: inherit;
+  text-transform: none;
+}
+
+.ja-megamenu a.over {
+  background: #1b212a;
+  color: #fff;
+}
+
+.ja-megamenu ul.level0 li.active a {
+	background: url(../../images/mainnav-active-bg.gif) repeat-x left top #1b212a;
+	color: #fff !important;
+}
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Styling ---*/
+.ja-megamenu ul.level1 li.mega {
+  border-top: 1px solid #232b37;
+  margin: 0;
+}
+
+.ja-megamenu ul.level1 li.first {
+  border-top: 0;
+}
+
+.ja-megamenu ul.level1 li.mega a.mega {
+	border: 0;
+	font-weight: normal;
+	padding: 10px 0;
+	text-transform: none;
+}
+
+.ja-megamenu ul.level1 li.mega a.over,
+.ja-megamenu ul.level1 li.mega a:hover {
+  color: #fff !important;
+}
+
+.ja-megamenu ul.level1 li.active a.mega {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.ja-megamenu .childcontent-inner {
+	background: #1b212a;
+	border-top: 0;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+	color: #333;
+}
+
+.ja-megamenu .level1 .childcontent-inner {
+  border-top: 0;
+}
+
+.ja-megamenu .childcontent .ja-moduletable { color: #333; }
+
+.ja-megamenu .childcontent .ja-moduletable h3 {
+	background: none;
+	border-bottom: 1px dotted #ccc;
+	text-transform: uppercase;
+}
+
+/* Grouped --- */
+.ja-megamenu .group-title {
+  border-bottom: 1px solid #384250;
+  margin-left: 10px;
+}
+
+.ja-megamenu .group-title .menu-title {
+	color: #acb4c0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.ja-megamenu .group-title a.mega:hover .menu-title {
+  color: #fff;
+}
+
+.ja-megamenu .group-title .menu-desc {
+	color: #999;
+	padding-left: 0 !important;
+}

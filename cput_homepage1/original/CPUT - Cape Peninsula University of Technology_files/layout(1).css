@@ -1,0 +1,9 @@
+/** * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------ *//* Gutter ---*/.main .inner {/* We use liquid layout, so we need to insert a div which will create margin if need */	padding-left: 10px;	padding-right: 10px;}.main .main-inner1 {/* We use liquid layout, so we need to insert a div which will create margin if need */	margin-left: 10px;	margin-right: 10px;}.column div.ja-moduletable, .column div.moduletable, .column div.ja-module, .column div.module { /* for side columns and spotlight, we only need to add margin or padding to Module */	margin-left: 10px;	margin-right: 10px;}.ja-inset2 div.ja-moduletable, .ja-inset2 .div.moduletable, .ja-inset2 div.ja-module, .ja-inset2 div.module {	margin-right: 0;	margin-left: 20px;}.ja-inset1 div.ja-moduletable, .ja-inset1 .div.moduletable, .ja-inset1 div.ja-module, .ja-inset1 div.module {	margin-right: 20px;	margin-left: 0;}.item .contentpaneopen {/* for article columns, we only need to add margin or padding to this div  */	padding-left: 10px;	padding-right: 10px;}.items-leading { }.items-row {/* minus the spacing of the article row to macth with the Gutter & global grid */	margin-left: -10px;	margin-right: -10px; }

@@ -1,0 +1,59 @@
+/* nether nav */
+/* layout-mobile */
+/* #ja-top-panel {
+    height: inherit ! important;
+}
+
+#ja-botsl2,
+#ja-top-panel {
+    font-size: 88% !important;
+}
+
+#ja-top-panel li {
+    margin: 0 0.3em !important;
+} */
+
+/* layout-tablet */
+/* #ja-botsl2,
+#ja-top-panel {
+    font-size: 88% !important;
+}
+
+#ja-top-panel {
+    height: 25px !important;
+}
+
+#ja-top-panel li {
+    margin: 0 0.3em !important;
+} */
+
+
+/* from layout-mobile.css */
+.menutopleft,
+.menu {
+    /* position: inherit ! important; */
+    position: relative;
+}
+
+
+
+/* template(1) */
+#ja-top-panel .main-inner1 {
+    border: 2px dotted #e2e2b5;
+    padding: 5px 10px;
+    text-align: center;
+    margin-top: 15px;
+    background: #ffffcc;
+    position: relative;
+}
+
+
+/* www.cput */
+#ja-top-panel {
+    border-bottom: 1px solid #0E0E0E;
+    float: left;
+    height: 32px;
+    white-space: nowrap;
+    background: url("../images/pattern-bg.png") repeat scroll 0 0 #083158;
+    border-top: 1px solid #184978;
+}

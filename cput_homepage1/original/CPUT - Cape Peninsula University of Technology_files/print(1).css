@@ -1,0 +1,8 @@
+#ja-head, #ja-top-panel, #ja-mainnav, #ja-left, #ja-slideshow #fontsize, div[id^="ja-bots"], div[id^="ja-right"], #ja-footer .top {
+     display: none  ! important;
+}
+
+#ja-main {
+     width: 100% ! important;
+}
+

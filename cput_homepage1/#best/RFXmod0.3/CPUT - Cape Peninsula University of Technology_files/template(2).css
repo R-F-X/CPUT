@@ -1,0 +1,266 @@
+@import url('www.cput.ac.za.css');
+/* get our custom www.cput.ac.za css ---*/
+
+/*
+ * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+body{
+background: url("../images/pattern-bg.png") repeat scroll 0 0 #083158 !important;
+}
+a:hover, a:active, a:focus {
+  color: #205f93;
+}
+
+p.readmore a:hover {
+  background-image: url(../images/readon-hover-bg.png);
+}
+
+button.validate:hover {
+  background-color: #205f93;
+}
+
+/* Profile page ---*/
+body.profiles h2.contentheading a:hover,
+body.profiles h2.contentheading a:focus,
+body.profiles h2.contentheading a:active,
+body.profiles .items-row .contentpaneopen:hover h2.contentheading a {
+  color: #205f93;
+}
+
+/* Videos page ---*/
+.blog.videos .contentpaneopen .contentheading a:hover,
+.blog.videos .contentpaneopen .contentheading a:focus,
+.blog.videos .contentpaneopen .contentheading a:active {
+  color: #205f93;
+}
+
+/* Events page ---*/
+.event-time a.btn-book {
+  background: #205f93;
+}
+
+/* Pagination */
+.pagination ul li span {
+  background: #205f93;
+}
+
+/* MODULE STYLE
+--------------------------------------------------------- */
+/* Login form ---*/
+#login-form p .button:hover {
+  background: #205f93;
+  border: 1px solid #205f93;
+}
+
+.login_form .button:hover, .login button:hover {
+  background: #205f93;
+}
+
+#login-form ul li a:hover,
+#login-form ul li a:focus,
+#login-form ul li a:active {
+  background-image: url(../images/bullet-hover.gif);
+}
+
+div.user-links ul li a:hover {
+  border-color: #205f93;
+}
+
+div.logout-button .button:hover {
+  background-color: #205f93;
+  border-color: #205f93;
+}
+
+/* Newsfeed module ---*/
+ul.newsfeed li h5.feed-link a:hover,
+ul.newsfeed li h5.feed-link a:focus,
+ul.newsfeed li h5.feed-link a:active {
+  color: #205f93;
+}
+
+/* Logout page ---*/
+div.logout .button:hover {
+  background-color: #205f93;
+  border-color: #205f93;
+}
+
+/* HEADER
+--------------------------------------------------------- */
+
+h1.logo a {
+	background-image: url(../images/logo.png);
+}
+
+/* Search form */
+#ja-search .inputbox {
+  background: #154c7a;
+  border: 1px solid #154c7a;
+  color: #9dbbd5;
+}
+
+#ja-search .button {
+  background: url(../images/icon-search.png) no-repeat center center #0a3559;
+  border-color: #0a3559;
+  color: #dce8f2;
+}
+
+#ja-search .button:hover {
+    background-color: #1F537E;
+    border-color: #DCE8F2;
+}
+/* NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+  background: #003e6b;
+  border-top: 1px solid #1f537e;
+}
+
+/* SPOTLIGHT
+--------------------------------------------------------- */
+/* Bottom spotlight 1 */
+#ja-botsl1 {
+  background: url(../images/pattern-bg.png) #003e6b;
+  color: #6991b7;
+}
+
+#ja-botsl1 .main {
+  border-bottom: 1px solid #215281;
+}
+
+#ja-botsl1 a {
+  color: #6991b7;
+}
+
+#ja-botsl1 a:hover,
+#ja-botsl1 a:focus,
+#ja-botsl1 a:active {
+  color: #fff;
+}
+
+/* Bottom spotlight 2 */
+#ja-botsl2 {
+  background: url(../images/pattern-bg.png) #003e6b;
+  border-bottom: 1px solid #072848;
+  color: #6991b7 !important;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+
+#ja-botsl2 ul.menu li a {
+  color: #dadada;
+}
+
+#ja-botsl2 ul.menu li a:hover, #ja-botsl2 ul.menu li a:focus, #ja-botsl2 ul.menu li a:active {
+    color: #fff !important;
+}
+
+/* Breadcrumbs ---*/
+#ja-navhelper {
+  background: url(../images/pattern-bg.png) #003e6b;
+  border-top: 1px solid #184978;
+  border-bottom: 1px solid #072848;
+}
+
+#ja-navhelper .main {
+  color: #6991b7;
+}
+
+#ja-navhelper .main a {
+  color: #6991b7;
+}
+
+#ja-navhelper .main a:hover,
+#ja-navhelper .main a:focus,
+#ja-navhelper .main a:active {
+  color: #fff;
+}
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer {
+  background: url(../images/pattern-bg.png) #083158;
+  border-top: 1px solid #184978;
+  color: #3a658e;
+}
+
+/* Contact page ---*/
+div.contact-links ul li a:hover,
+div.contact-links ul li a:focus,
+div.contact-links ul li a:active {
+  border-color: #205f93;
+}
+
+.contact-form .button {
+  background: #205f93;
+  border: 1px solid #205f93;
+}
+
+div.contact-miscinfo .info-block.icon1 {
+  background-image: url(../images/ct-icon1.png);
+}
+
+div.contact-miscinfo .info-block.icon2 {
+  background-image: url(../images/ct-icon2.png);
+}
+
+div.contact-miscinfo .info-block.icon3 {
+  background-image: url(../images/ct-icon3.png);
+}
+
+/* Smart search */
+.search-course div.finder .button:hover {
+  background: #205f93;
+  border-color: #205f93;
+}
+
+/* Search page */
+.search .word button:hover {
+  background: #205f93;
+  border-color: #205f93;
+}
+
+/* ACYmail */
+div.acymailing_form p .inputbox {
+  background: #215281;
+  color: #6991b7;
+}
+
+div.acymailing_form p .button {
+  background: #e09b0f;
+  border-color: #e09b0f;
+}
+
+/* Contact list */
+ul.contact-list li.phone {
+  background-image: url(../images/icon-phone.png);
+}
+
+ul.contact-list li.email {
+  background-image: url(../images/icon-email.png);
+}
+
+/* Social list */
+ul.social-list li a {
+  background-image: url(../images/icon-socials.png);
+}
+
+/* Edit button */
+.formelm-buttons button:hover {
+  background: #205f93;
+  border-color: #205f93;
+}
+
+/* Typograpy */
+.btn-submit:hover {
+  background-color: #205f93;
+}
