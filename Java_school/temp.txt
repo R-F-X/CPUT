@@ -1,1 +1,6 @@
+*Notes*
+(btw, rename this file to notes.txt/ md)
 
+- create 3 main folders, year1, year2, year3
+- in each folder have an exercise folder and a project/ assigment folder
+- dont upload all exercise and projects, only the difficult/ outstanding/ interesing ones
